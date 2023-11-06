@@ -24,16 +24,21 @@ class DatabaseSeeder extends Seeder
         //  ]);
          User::factory(3)->create();
 
-
-          Category::create([
-          'name' => 'Biografi',
-          'slug' => 'biografi'
-          ]);
+         Category::create([
+             'name' => 'Rock Band',
+             'slug' => 'rock-band'
+         ]);
 
          Category::create([
-             'name' => 'Band',
-             'slug' => 'band'
-         ]);
+            'name' => 'Biography',
+            'slug' => 'biography'
+            ]);
+
+
+         Category::create([
+            'name' => 'Music',
+            'slug' => 'music'
+        ]);
 
         Post::factory(20)->create();
 
